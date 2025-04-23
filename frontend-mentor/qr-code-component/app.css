@@ -10,28 +10,25 @@ body {
 
 .card {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    padding: 20px;
-    width: 320px;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    width: 20rem;
     text-align: center;
-    /*justify-content: center;*/
 }
 
 img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+    border-radius: 0.625rem;
 }
 
 .improve {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
 }
 
 .scan {
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 400;
     color: hsl(216, 15%, 48%)
 }
