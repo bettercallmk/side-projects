@@ -1,0 +1,122 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 100vh;
+    font-family: Outfit;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.equilibriumImage {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: opacity 0.3s;
+}
+
+.equilibriumImage:hover {
+    opacity: 0.5;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    font-weight: 400;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    text-align: left;
+    font-weight: 300;
+}
+
+.purchase-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.eth-svg {
+    width: 10px;
+}
+
+.clock-svg {
+    width: 15px;
+}
+
+.ethereum {
+    color: hsl(0, 0%, 100%);
+}
+
+.buyDay {
+    color: hsl(216, 50%, 60%);
+    font-weight: 300;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid hsl(215, 32%, 27%);
+    margin: 13px auto;
+}
+
+.user-info {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.userImage {
+    width: 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.creation {
+    color: hsl(216, 50%, 60%);
+    margin-right: 5px;
+}
+
+.jules {
+    color: hsl(0, 0%, 100%);
+}
+
+.jules:hover {
+    color: hsl(178, 100%, 50%); /* 밝은 사이언 컬러 */
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 280px;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .purchase-info {
+        font-size: 14px;
+    }
+
+    .user-info {
+        font-size: 14px;
+    }
+}
