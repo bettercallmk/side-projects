@@ -1,0 +1,152 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+}
+
+.order-card {
+    height: 650px;
+    width: 420px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.card-title {
+    color: hsl(223, 47%, 23%);
+    font-size: 27px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.order-description {
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    width: 318px;
+    margin: 1.5rem auto;
+}
+
+.plan-name {
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+    margin: 0;
+}
+
+.plan-price {
+    color: hsl(224, 23%, 55%);
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+}
+
+.plan-icon {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.plan-details {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.change-link {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.change-link:hover {
+    filter: opacity(0.8);
+}
+
+.btn-confirm {
+    background-color: hsl(245, 75%, 52%);
+    width: 350px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 26px;
+    box-shadow: 0px 15px 20px rgba(56, 41, 224, 0.2);
+}
+
+.btn-confirm:hover {
+    filter: opacity(0.8);
+    cursor: grab;
+}
+
+.btn-cancel {
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    border: 1px solid white;
+    color: hsl(224, 23%, 55%);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: grab;
+}
+
+@media (max-width: 375px) {
+    .order-card {
+        width: 90%;
+        margin: 1rem auto;
+        border-radius: 15px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+    }
+
+    .order-description {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        line-height: 1.5;
+    }
+
+    .plan-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .plan-icon {
+        margin: 0 auto;
+    }
+
+    .plan-details {
+        text-align: center;
+    }
+
+    .btn-confirm,
+    .btn-cancel {
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+}
